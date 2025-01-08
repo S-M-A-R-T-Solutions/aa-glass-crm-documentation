@@ -14,7 +14,12 @@ export default defineConfig({
             './src/tailwind.css',
         ],
         social: {
-            // github: 'https://github.com/withastro/starlight',
+            facebook: "https://www.facebook.com/aaglasswindows",
+            instagram: "https://www.instagram.com/aaglasswindows"
+        },
+        logo: {
+            src: './src/assets/logo.png',
+            alt: 'AA Glass Windows Logo'
         },
         defaultLocale: 'en',
         locales: {
