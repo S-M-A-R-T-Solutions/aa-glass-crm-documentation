@@ -5,7 +5,7 @@ template: splash
 hero:
   tagline: Crystal Clear Solutions for Your Glass Business
   image:
-    file: ../../../assets/houston.webp
+    file: ../../../assets/crmHomeScreen.webp
   actions:
     - text: Get Started
       link: /en/guides/example/
@@ -17,6 +17,8 @@ hero:
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
+
+import { Year } from '../../../constants/utils';
 
 ## Summary
 
@@ -34,3 +36,8 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		Learn more in [the Starlight Docs](https://starlight.astro.build/).
 	</Card>
 </CardGrid>
+
+<footer>
+  <p>© {Year} AA Glass. All rights reserved.</p>
+</footer>
+

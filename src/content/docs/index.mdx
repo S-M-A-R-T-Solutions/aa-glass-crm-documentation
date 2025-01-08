@@ -1,24 +1,29 @@
 ---
 title: AA Glass CRM
-description: Esta documentación tiene como objetivo proporcionar capacitación básica tanto a los empleados nuevos como a los veteranos, para aprovechar las nuevas tecnologías que estamos implementando en la empresa y mejorar los flujos de trabajo.
+description: This documentation aims to provide basic training for both new and veteran employees, to take advantage of the new technologies we are implementing in the company to enhance workflows.
 template: splash
 hero:
-  tagline: Soluciones de Impacto Para Tu Negocio
+  tagline: Crystal Clear Solutions for Your Glass Business
   image:
-    file: ../../../assets/crmHomeScreen.webp
+    file: ../../assets/crmHomeScreen.webp
+    class: 'hero-image'
   actions:
-    - text: Comenzar
-      link: /es/guides/example/
+    - text: Get Started
+      link: /en/guides/example/
       icon: right-arrow
-    - text: Abrir el CRM
+    - text: Open the CRM
       link: https://app.impactglass.net
       icon: external
       variant: minimal
 ---
 
+
+
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+import { Year } from '../../constants/utils';
+
+## Summary
 
 <CardGrid stagger>
 	<Card title="Update content" icon="pencil">
@@ -34,3 +39,8 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		Learn more in [the Starlight Docs](https://starlight.astro.build/).
 	</Card>
 </CardGrid>
+
+<footer>
+  <p>© {Year} AA Glass. All rights reserved.</p>
+</footer>
+
