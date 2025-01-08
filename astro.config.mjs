@@ -8,7 +8,10 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
     integrations: [starlight({
-        title: 'CRM Documentation',
+        title: {
+            en: "CRM Documentation",
+            es: "Documentación del CRM",
+        },
         customCss: [
             // Path to your Tailwind base styles:
             './src/tailwind.css',
@@ -29,7 +32,7 @@ export default defineConfig({
             es: {
                 label: 'Español'
             },
-        }
+        },
     }), tailwind({
         // Disable the default base styles:
         applyBaseStyles: false,
