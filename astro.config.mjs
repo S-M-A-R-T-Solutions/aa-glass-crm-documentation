@@ -2,11 +2,17 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+import tailwind from '@astrojs/tailwind';
+
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'CRM Documentation',
+			customCss: [
+				// Path to your Tailwind base styles:
+				'./src/tailwind.css',
+			],
 			social: {
 				// github: 'https://github.com/withastro/starlight',
 			},
@@ -19,6 +25,9 @@ export default defineConfig({
 					label: 'Español'
 				},
 			}
+		}), tailwind({
+			// Disable the default base styles:
+			applyBaseStyles: false,
 		}),
 	],
 });
