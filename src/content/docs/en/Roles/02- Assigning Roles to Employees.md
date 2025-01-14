@@ -1,5 +1,5 @@
 ---
-title: Assigning ROles to Employees
+title: Assigning Roles to Employees
 description: A guide in my new Starlight docs site.
 ---
 
