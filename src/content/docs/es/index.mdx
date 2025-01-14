@@ -1,36 +1,103 @@
 ---
-title: Bienvenido a Starlight
-description: Get started building your docs site with Starlight.
+title: AA Glass CRM
+description: Esta documentación tiene como objetivo proporcionar capacitación básica tanto a los empleados nuevos como a los veteranos, para aprovechar las nuevas tecnologías que estamos implementando en la empresa y mejorar los flujos de trabajo.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Soluciones de Impacto Para Tu Negocio
   image:
-    file: ../../../assets/houston.webp
+    file: ../../../assets/crmHomeScreen.webp
   actions:
-    - text: Example Guide
-      link: /es/guides/example/
+    - text: Comenzar
+      link: /es/calendar/01--calendar-views
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: Abrir el CRM
+      link: https://app.impactglass.net
       icon: external
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-## Next steps
+import { Year } from '../../../constants/utils';
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+## Summary
+
+<Card title="Getting Started" icon='rocket'>
+		<LinkCard title="Login and Signup" href="/en/getting-started/loginsignup/" />
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
-</CardGrid>
+  <Card title="Home Page" icon="laptop">
+    <CardGrid>
+      <LinkCard title="Search Bar" href="/en/home-page/01--search-bar/" />
+      <LinkCard title="Notifications Bar" href="/en/home-page/02--notifications-tab/" />
+      <LinkCard title="Language Switcher" href="/en/home-page/03--language-switcher/" />
+      <LinkCard title="Personal Reports" href="/en/home-page/04--personal-reports/" />
+      <LinkCard title="Upcoming Events" href="/en/home-page/05--upcoming-events/" />
+    </CardGrid>
+  </Card>
+  <Card title="Cities" icon="seti:odata">
+    <LinkCard title="Creating a City" href="/en/cities/01--creating-a-city/" />
+  </Card>
+  <Card title="Contractors" icon="seti:config">
+    <CardGrid>
+      <LinkCard title="Creating a Contractor" href="/en/contractors/01--creating-a-contractor/" />
+      <LinkCard title="Changing a Contractor's Password" href="/en/contractors/02--changing-a-contractors-password/" />
+    </CardGrid>
+  </Card>
+  <Card title="Departments" icon='puzzle'>
+    <LinkCard title="Creating a Department" href="/en/departments/01--creating-a-department/" />
+  </Card>
+  <Card title="Employees" icon="seti:csv">
+    <CardGrid>
+      <LinkCard title="Creating an Employee" href="/en/employees/01--creating-an-employee/" />
+      <LinkCard title="Changing an Employee's Password" href="/en/employees/02--changing-an-employees-password" />
+      <LinkCard title="Assigning Roles to Employees" href="/en/employees/03--assigning-roles-to-employees/" />
+    </CardGrid>
+  </Card>
+  <Card title="Jobs" icon='seti:happenings'>
+    <CardGrid>
+      <LinkCard title="Creating a Job" href="/en/jobs/01--creating-a-job/"/>
+      <LinkCard title="Adding an Event from Job Details" href="/en/jobs/02--adding-an-event-from-job-details/"/>
+      <LinkCard title="Changing the progress of an event" href="/en/jobs/03--changing-the-progress-of-an-event/"/>
+      <LinkCard title="Adding a Note to a Job" href="/en/jobs/04--adding-a-note-to-a-job/"/>
+      <LinkCard title="Contractor Notes" href="/en/jobs/05--contractor-notes/"/>
+      <LinkCard title="Adding Tasks to a Job" href="/en/jobs/06--adding-tasks-to-a-job/"/>
+    </CardGrid>
+  </Card>
+  <Card title="Offices" icon="seti:notebook">
+    <LinkCard title="Creating an Office" href="/en/offices/01--creating-an-office/"/>
+  </Card>
+  <Card title="Reports" icon='seti:cake_php'>
+    <LinkCard title="Reports Module" href="/en/reports/01--reports-module/"/>
+  </Card>
+  <Card title="Roles" icon='stackOverflow'>
+      <CardGrid>
+        <LinkCard title="Creating a Role" href="/en/roles/01--creating-a-role/"/>
+        <LinkCard title="Assigning Roles to Employees" href="/en/roles/02--assigning-roles-to-employees/"/>
+        <LinkCard title="Assigning Permissions to Roles" href="/en/roles/03--assigning-permissions-to-roles/"/>
+      </CardGrid>
+      <Card title="Default Roles" icon='stackOverflow'>
+        <CardGrid>
+          <LinkCard title="Employee" href="/en/roles/03--assigning-permissions-to-roles/"/>
+          <LinkCard title="Manager" href="/en/roles/03--assigning-permissions-to-roles/"/>
+          <LinkCard title="Contractor" href="/en/roles/03--assigning-permissions-to-roles/"/>
+          <LinkCard title="Installers" href="/en/roles/03--assigning-permissions-to-roles/"/>
+        </CardGrid>
+      </Card>
+  </Card>
+  <Card title="Status" icon='information'>
+    <CardGrid>
+      <LinkCard title="Filtering Jobs by Task" href="/en/status/01--filtering-jobs-by-task/"/>
+      <LinkCard title="Checking the Status of a Task" href="en/status/02--checking-the-status-of-a-task/"/>
+      <LinkCard title="Changing the Progress of an Event From Status Bar" href="/en/status/03--changing-the-progress-of-an-event-from-status-tab/"/>
+    </CardGrid>
+  </Card>
+  <Card title="Tasks" icon='open-book'>
+    <CardGrid>
+      <LinkCard title="Adding Tasks" href="en/task/01--adding-tasks/" />
+      <LinkCard title="Adding Subtasks to a Task" href="/en/task/02--adding-subtasks-to-a-task/" />
+    </CardGrid>
+  </Card>
+
+<footer>
+  <p>© {Year} AA Glass. All rights reserved. Powered by <a href="https://thesmartsolution.net">SMART Solutions</a></p>
+</footer>

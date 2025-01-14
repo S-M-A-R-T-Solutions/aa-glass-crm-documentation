@@ -5,7 +5,8 @@ template: splash
 hero:
   tagline: Crystal Clear Solutions for Your Glass Business
   image:
-    file: ../../../assets/crmHomeScreen.webp
+    file: ../../assets/crmHomeScreen.webp
+    class: 'hero-image'
   actions:
     - text: Get Started
       link: /en/calendar/01--calendar-views
@@ -18,11 +19,11 @@ hero:
 
 import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-import { Year } from '../../../constants/utils';
+import { Year } from '../../constants/utils';
 
 ## Summary
 
-<Card title="Getting Started" icon='rocket'>
+	<Card title="Getting Started" icon='rocket'>
 		<LinkCard title="Login and Signup" href="/en/getting-started/loginsignup/" />
 	</Card>
   <Card title="Home Page" icon="laptop">
