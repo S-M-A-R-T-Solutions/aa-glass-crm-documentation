@@ -1,11 +1,83 @@
 ---
-title: Detalles de un Evento
-description: A guide in my new Starlight docs site.
+title: Detalles del Evento
+description: Visualización de Detalles del Evento. Adición de Notas y Archivos Adjuntos
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
-Writing a good guide requires thinking about what your users are trying to do.
+import { Aside } from '@astrojs/starlight/components';
 
-## Further reading
+Después de hacer clic en un evento en el calendario, serás llevado a la página de detalles del evento. Aquí puedes ver los detalles del evento, añadir notas y adjuntar archivos.
 
-- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
+![](/calendar/event-details-1.webp)
+
+### Detalles del Evento
+
+La página de detalles del evento muestra la siguiente información:
+
+### Información General
+El nombre, fecha, hora, descripción y el trabajo al que pertenece el evento.
+
+![](/calendar/event-details-2.webp)
+
+### Estado
+
+![](/calendar/event-details-3.webp)
+
+El estado del evento, que puede ser uno de los siguientes:
+
+- **Pendiente**: El evento aún no ha comenzado.
+- **En Progreso**: El evento está actualmente en curso.
+- **Finalizado**: El evento ha sido completado.
+
+<Aside type="note">
+    Por defecto, todos los eventos se crean con un estado "Pendiente". Para cambiar el estado del evento, haz clic en el menú desplegable y selecciona el estado deseado.
+</Aside>
+
+![](/calendar/event-details-4.webp)
+
+<Aside type="note">
+    Cuando cambias el estado de un evento, el sistema actualizará automáticamente el progreso del evento. Los eventos "Pendientes" tienen un progreso del 0%, los eventos "En Progreso" tienen un progreso del 50%, y los eventos "Finalizados" tienen un progreso del 100%. Esto es especialmente útil cuando verificas la finalización de una tarea, porque todos los eventos relacionados con una tarea contribuyen al porcentaje de finalización de una Tarea. Para más información, consulta la sección <a href="/es/status/02--checking-the-status-of-a-task/">Estado de una Tarea</a>.
+</Aside>
+
+### Notas
+
+![](/calendar/event-details-5.webp)
+
+Puedes añadir notas al evento. Las notas pueden ser utilizadas para proporcionar información adicional sobre el evento, como lo que se discutió, lo que se hizo, o lo que necesita hacerse.
+
+#### Añadiendo una Nota
+
+Para añadir una nota, haz clic en el botón "Añadir Nota". Esto abrirá una ventana modal donde puedes escribir tu nota.
+
+![](/calendar/event-details-6.webp)
+
+<Aside type="tip">
+    Sé lo más descriptivo posible al añadir notas. Esta información estará disponible para que otros miembros del equipo la consulten, así como la gerencia.
+</Aside>
+
+#### Añadiendo Imágenes a una Nota
+
+También puedes añadir imágenes a tus notas. Para hacer esto, haz clic en el botón "+". Esto abrirá una ventana modal donde puedes subir una imagen desde tu dispositivo.
+
+![](/calendar/event-details-7.webp)
+
+<Aside type="caution">
+    Por razones de optimización, el sistema solo permite extensiones de imagen de nueva generación. Estas son conocidas por estar escritas en minúsculas. Ejemplos de estas extensiones son: <br> <b>.webp, .jpg, .png, .gif.</b></br>
+</Aside>
+
+Una vez que hayas seleccionado la imagen que quieres añadir, verás una miniatura de ella junto al botón "+".
+
+![](/calendar/event-details-8.webp)
+
+<Aside type="tip">
+    Si deseas eliminar la imagen, simplemente pasa el cursor sobre ella y haz clic en el botón "Papelera".
+    
+    ![](/calendar/event-details-9.webp)
+</Aside>
+
+Una vez que hayas añadido la nota y todos los archivos adjuntos, haz clic en el botón "Guardar" para guardar la nota. La verás listada en la sección de Notas.
+
+![](/calendar/event-details-10.webp)
+
+### Conclusión
+
+La página de detalles del evento te permite ver toda la información relacionada con un evento, añadir notas y adjuntar archivos. Esto es útil para mantener un registro de lo que se discutió, lo que se hizo y lo que necesita hacerse. Al añadir notas y archivos adjuntos, puedes proporcionar más contexto al evento y facilitar que otros miembros del equipo comprendan lo que necesita hacerse. Esta guía te ha mostrado cómo ver los detalles del evento, añadir notas y adjuntar archivos a un evento.
