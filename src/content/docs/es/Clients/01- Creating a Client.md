@@ -1,5 +1,5 @@
 ---
-title: Creating a Contractor
+title: Creando un Cliente
 description: A guide in my new Starlight docs site.
 ---
 
