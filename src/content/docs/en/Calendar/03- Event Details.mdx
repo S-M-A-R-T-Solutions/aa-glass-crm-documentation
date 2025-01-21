@@ -1,0 +1,83 @@
+---
+title: Event Details
+description: Visualizing Event Details. Adding Notes and Attachments
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+After Clicking an event in the calendar, you will be taken to the event details page. Here you can see the details of the event, add notes, and attach files.
+
+![](/calendar/event-details-1.webp)
+
+### Event Details
+
+The event details page shows the following information:
+
+### General Info
+The name, date, time, description, and job to which the event belongs.
+
+![](/calendar/event-details-2.webp)
+
+### Status
+
+![](/calendar/event-details-3.webp)
+
+The status of the event, which can be one of the following:
+
+- **Pending**: The event has not started yet.
+- **In Progress**: The event is currently in progress.
+- **Finished**: The event has been completed.
+
+<Aside type="note">
+    By default, all events are created with a status of "Pending". To change the status of the event, click the dropdown and select the desired status.
+</Aside>
+
+![](/calendar/event-details-4.webp)
+
+<Aside type="note">
+    When you change the status of an event, the system will automatically update the event's progress. "Pending" events have a progress of 0%, "In Progress" events have a progress of 50%, and "Finished" events have a progress of 100%. This is specially useful when you check the completion of a task, because all the events related to a task contribute to the completion percentage of a Task. For more information, check the <a href="/en/status/02--checking-the-status-of-a-task/">Status of a Task section</a>.
+</Aside>
+
+### Notes
+
+![](/calendar/event-details-5.webp)
+
+You can add notes to the event. Notes can be used to provide additional information about the event, such as what was discussed, what was done, or what needs to be done.
+
+#### Adding a Note
+
+To add a note, click the "Add Note" button. This will open a modal window where you can write your note.
+
+![](/calendar/event-details-6.webp)
+
+<Aside type="tip">
+    Be as descriptive as possible when adding notes. This information will be available for other team members to check, as well as management.
+</Aside>
+
+#### Adding Images to a Note
+
+You can also add images to your notes. To do this, click the "+" button. This will open a modal window where you can upload an image from your device.
+
+![](/calendar/event-details-7.webp)
+
+<Aside type="caution">
+    Due to optimization reasons, the system only allows new generation image extensions. These are known for being written in lowercase. Examples of these extensions are: <br> <b>.webp, .jpg, .png, .gif.</b></br>
+</Aside>
+
+Once you have selected the image you wan to add, you will see a thumbnail of it next to the "+" button.
+
+![](/calendar/event-details-8.webp)
+
+<Aside type="tip">
+    If you want to delete the image, just hover over it and click the "Trash Can" button.
+    
+    ![](/calendar/event-details-9.webp)
+</Aside>
+
+Once you have added the note and all the attachments, click the "Save" button to save the note. You will see it listed in the Notes section.
+
+![](/calendar/event-details-10.webp)
+
+### Conclusion
+
+The event details page allows you to see all the information related to an event, add notes, and attach files. This is useful for keeping track of what was discussed, what was done, and what needs to be done. By adding notes and attachments, you can provide more context to the event and make it easier for other team members to understand what needs to be done. This guide has shown you how to view the event details, add notes, and attach files to an event.
