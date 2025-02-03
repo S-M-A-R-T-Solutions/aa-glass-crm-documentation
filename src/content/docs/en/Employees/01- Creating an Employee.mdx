@@ -1,0 +1,52 @@
+---
+title: Creating an Employee
+description: A guide in how to create an Employee.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Employees are the main users of your system. They can be assigned to Jobs and events. Every employee belongs to a Department, and have a Role determined by the Manager/Admin.
+
+### Creating an Employee
+
+To create an Employee, follow these steps:
+
+![](/employee/emp-1.webp)
+
+1. Go to the **Employees** Tab.
+
+![](/employee/emp-2.webp)
+
+2. Click on the **+ Add Employee** Button. You will be redirected to the Employee Creation Form.
+
+![](/employee/emp-3.webp)
+
+3. Fill out every field with the Employee's information.
+
+#### Adding Tasks to Employees
+
+After setting up the Employee's information, you can assign tasks to the Employee. For this, check the Tasks you want the employee have access to.
+
+#### Assigning Roles to the Employee
+
+You can assign Roles to the Employee. Roles are a way to determine what the Employee can do in the system. For example, a Manager can create Jobs and assign them to Employees, while a regular Employee can only see the Jobs assigned to them.
+
+<Aside type="caution">
+    Every employee can have multiple roles, due to the flexibility required for the client's needs. Because of this, an employee will have the permissions of all roles assigned to it.
+    
+    ![](/employee/emp-5.webp)
+    
+    For example, if an employee has the roles of Manager and Employee, it will have the permissions of both roles.
+</Aside>
+
+After checking all information is correct, click on the **Save** button.
+
+![](/employee/emp-6.webp)
+
+<Aside type="tip">
+    You can add as many phone numbers and emails you want. This is useful for having multiple contact points for the Employee.
+</Aside>
+
+Clicking on any employee will open the Employee's profile, where you can see all the information about the Employee. The mos important information here are all the events where the employee is assigned, whether is a personal assignation or a department.
+
+![](/employee/emp-7.webp)
