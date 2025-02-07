@@ -1,0 +1,52 @@
+---
+title: Creando un Empleado
+description: Una guía sobre cómo crear un Empleado.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Los empleados son los principales usuarios de tu sistema. Pueden ser asignados a Trabajos y eventos. Cada empleado pertenece a un Departamento y tiene un Rol determinado por el Gerente/Admin.
+
+### Creando un Empleado
+
+Para crear un Empleado, sigue estos pasos:
+
+![](/employee/emp-1.webp)
+
+1. Ve a la pestaña **Empleados**.
+
+![](/employee/emp-2.webp)
+
+2. Haz clic en el botón **+ Agregar Empleado**. Serás redirigido al formulario de creación de empleados.
+
+![](/employee/emp-3.webp)
+
+3. Completa cada campo con la información del Empleado.
+
+#### Agregando Tareas a los Empleados
+
+Después de configurar la información del Empleado, puedes asignarle tareas. Para ello, selecciona las Tareas a las que quieres que el empleado tenga acceso.
+
+#### Asignando Roles al Empleado
+
+Puedes asignar Roles al Empleado. Los Roles determinan qué puede hacer el Empleado en el sistema. Por ejemplo, un Gerente puede crear Trabajos y asignarlos a Empleados, mientras que un Empleado regular solo puede ver los Trabajos asignados a él.
+
+<Aside type="caution">
+    Cada empleado puede tener múltiples roles, debido a la flexibilidad requerida para las necesidades del cliente. Por esta razón, un empleado tendrá los permisos de todos los roles asignados.
+    
+    ![](/employee/emp-5.webp)
+    
+    Por ejemplo, si un empleado tiene los roles de Gerente y Empleado, tendrá los permisos de ambos roles.
+</Aside>
+
+Después de verificar que toda la información es correcta, haz clic en el botón **Guardar**.
+
+![](/employee/emp-6.webp)
+
+<Aside type="tip">
+    Puedes agregar tantos números de teléfono y correos electrónicos como desees. Esto es útil para tener múltiples puntos de contacto con el Empleado.
+</Aside>
+
+Al hacer clic en cualquier empleado, se abrirá su perfil, donde podrás ver toda la información sobre él. La información más importante aquí son todos los eventos en los que el empleado está asignado, ya sea una asignación personal o por departamento.
+
+![](/employee/emp-7.webp)

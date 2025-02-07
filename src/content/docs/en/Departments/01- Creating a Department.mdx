@@ -1,0 +1,48 @@
+---
+title: Creating a Department
+description: A guide in how to Create a Department.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Departments are Groups of Employees inside your organization. This helps to manage which works are managed by which group of employees. Every Department has a Manager, and when assigning jobs you can choose assign it to a Department instead of a single Employee.
+
+### Creating a Department
+
+To create a Department, follow these steps:
+
+![](/department/dpts-1.webp)
+
+1. Go to the **Departments** Tab.
+
+![](/department/dpts-2.webp)
+
+2. Click on the **+ Add Department** Button.
+
+![](/department/dpts-3.webp)
+
+3. You will be redirected to the Department Creation Form.
+
+#### Adding Department Manager
+
+After setup the name and description of the Department, you can setup the manager. For do this, click on the Manager Field and you will open a modal to select the Manager.
+
+![](/department/dpts-6.webp)
+
+#### Adding Employees
+
+You can add Employees to the Department by clicking on the **+** Button in Employee Field.
+
+![](/department/dpts-4.webp)
+
+<Aside type="caution">
+    For security reasons, you can only add one employee at a time. Multi-employee additions can lead to database conflicts.
+</Aside>
+
+![](/department/dpts-5.webp)
+
+After checking all employees are added, click on the **Save** button.
+
+<Aside type="note">
+    Departments can be assigned to Jobs, in order to all employees in the Department can be notified about changes in the Job. For more information, refer to the <a href="/en/jobs/01--creating-a-job/">Jobs Section</a>
+</Aside>

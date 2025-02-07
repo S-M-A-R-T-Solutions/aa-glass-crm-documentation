@@ -1,0 +1,48 @@
+---
+title: Creación de un Departamento
+description: Una guía sobre cómo crear un Departamento.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Los departamentos son grupos de empleados dentro de tu organización. Esto te ayuda a gestionar qué trabajos maneja cada grupo. Cada departamento tiene un gerente. Al asignar trabajos, puedes elegir asignarlos a un departamento en lugar de a un solo empleado.
+
+### Crear un Departamento
+
+Para crear un departamento, sigue estos pasos:
+
+![](/department/dpts-1.webp)
+
+1. Ve a la pestaña **Departamentos**.
+
+![](/department/dpts-2.webp)
+
+2. Haz clic en el botón **+ Agregar Departamento**.
+
+![](/department/dpts-3.webp)
+
+3. Serás redirigido al formulario de creación del departamento.
+
+#### Asignar Gerente del Departamento
+
+Después de configurar el nombre y la descripción del departamento, asigna el gerente. Haz clic en el campo de Gerente y se abrirá un modal para seleccionar al gerente.
+
+![](/department/dpts-6.webp)
+
+#### Agregar Empleados
+
+Puedes agregar empleados al departamento haciendo clic en el botón **+** en el campo de Empleados.
+
+![](/department/dpts-4.webp)
+
+<Aside type="caution">
+    Por razones de seguridad, solo puedes agregar un empleado a la vez. Agregar múltiples empleados puede generar conflictos en la base de datos.
+</Aside>
+
+![](/department/dpts-5.webp)
+
+Después de verificar que todos los empleados estén agregados, haz clic en el botón **Guardar**.
+
+<Aside type="note">
+    Los departamentos pueden ser asignados a trabajos para que todos los empleados del departamento reciban notificaciones sobre cambios en el trabajo. Para más información, consulta la <a href="/en/jobs/01--creating-a-job/">sección de Trabajos</a>.
+</Aside>
